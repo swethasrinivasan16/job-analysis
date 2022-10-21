@@ -11,3 +11,4 @@ gensim
 seaborn
 matplotlib
 plotly
+wordcloud
