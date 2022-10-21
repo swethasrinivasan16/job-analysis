@@ -12,3 +12,4 @@ seaborn
 matplotlib
 plotly
 wordcloud
+pdfminer
