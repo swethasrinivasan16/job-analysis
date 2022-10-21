@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+bs4
+selenium
+streamlit_lottie
+pyresparser
+nltk
+spacy
+gensim
+seaborn
+matplotlib
+plotly
