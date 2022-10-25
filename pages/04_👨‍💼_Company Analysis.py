@@ -38,11 +38,11 @@ company = st.selectbox('Select the company',('Honeywell', 'IBM', 'Microsoft', 'O
 if company == "Honeywell":
     df = pd.read_csv('https://raw.githubusercontent.com/swethasrinivasan16/job-analysis/main/pages/company1_review.csv', index_col=[0], parse_dates=['Comment Datetime']) 
 elif company == "IBM":
-    df = pd.read_csv('IBM.csv', index_col=[0], parse_dates=['Comment Datetime'])
+    df = pd.read_csv('https://raw.githubusercontent.com/swethasrinivasan16/job-analysis/main/pages/IBM.csv', index_col=[0], parse_dates=['Comment Datetime'])
 elif company == "Microsoft":
-    df = pd.read_csv('Microsoft.csv', index_col=[0], parse_dates=['Comment Datetime'])
+    df = pd.read_csv('https://raw.githubusercontent.com/swethasrinivasan16/job-analysis/main/pages/Microsoft.csv', index_col=[0], parse_dates=['Comment Datetime'])
 else:
-    df = pd.read_csv('Oracle.csv', index_col=[0], parse_dates=['Comment Datetime'])
+    df = pd.read_csv('https://raw.githubusercontent.com/swethasrinivasan16/job-analysis/main/pages/Oracle.csv', index_col=[0], parse_dates=['Comment Datetime'])
     
     
 df.drop_duplicates(inplace = True)
@@ -278,7 +278,7 @@ plt.title('Overall Rating by Job Family', fontsize=20)
 st.pyplot(job_family)
 
 df_cleaned.to_csv('df_cleaned1.csv')
-df_cleaned = pd.read_csv('D:\COLLEGE\YEAR V\SEM IX\MINOR PROJECT\proj\pages\df_cleaned.csv')
+df_cleaned = pd.read_csv('https://raw.githubusercontent.com/swethasrinivasan16/job-analysis/main/pages/df_cleaned.csv')
 def get_common_words(column,n):
     text = df_cleaned[column].to_string()
     tokens = [w for w in word_tokenize(text.lower()) if w.isalpha()]
