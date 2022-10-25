@@ -13,3 +13,4 @@ matplotlib
 plotly
 wordcloud
 pdfminer
+sklearn
