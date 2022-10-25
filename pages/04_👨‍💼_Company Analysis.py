@@ -36,7 +36,7 @@ st.set_page_config(
 company = st.selectbox('Select the company',('Honeywell', 'IBM', 'Microsoft', 'Oracle'))
 
 if company == "Honeywell":
-    df = pd.read_csv('company1_review.csv', index_col=[0], parse_dates=['Comment Datetime']) 
+    df = pd.read_csv('https://raw.githubusercontent.com/swethasrinivasan16/job-analysis/main/pages/company1_review.csv', index_col=[0], parse_dates=['Comment Datetime']) 
 elif company == "IBM":
     df = pd.read_csv('IBM.csv', index_col=[0], parse_dates=['Comment Datetime'])
 elif company == "Microsoft":
