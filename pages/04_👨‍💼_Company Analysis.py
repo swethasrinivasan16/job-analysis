@@ -36,13 +36,13 @@ st.set_page_config(
 company = st.selectbox('Select the company',('Honeywell', 'IBM', 'Microsoft', 'Oracle'))
 
 if company == "Honeywell":
-    df = pd.read_csv('D:\COLLEGE\YEAR V\SEM IX\MINOR PROJECT\proj\pages\company1_review.csv', index_col=[0], parse_dates=['Comment Datetime']) 
+    df = pd.read_csv('company1_review.csv', index_col=[0], parse_dates=['Comment Datetime']) 
 elif company == "IBM":
-    df = pd.read_csv('D:\COLLEGE\YEAR V\SEM IX\MINOR PROJECT\proj\pages\IBM.csv', index_col=[0], parse_dates=['Comment Datetime'])
+    df = pd.read_csv('IBM.csv', index_col=[0], parse_dates=['Comment Datetime'])
 elif company == "Microsoft":
-    df = pd.read_csv('D:\COLLEGE\YEAR V\SEM IX\MINOR PROJECT\proj\pages\Microsoft.csv', index_col=[0], parse_dates=['Comment Datetime'])
+    df = pd.read_csv('Microsoft.csv', index_col=[0], parse_dates=['Comment Datetime'])
 else:
-    df = pd.read_csv('D:\COLLEGE\YEAR V\SEM IX\MINOR PROJECT\proj\pages\Oracle.csv', index_col=[0], parse_dates=['Comment Datetime'])
+    df = pd.read_csv('Oracle.csv', index_col=[0], parse_dates=['Comment Datetime'])
     
     
 df.drop_duplicates(inplace = True)
